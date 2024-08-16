@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+      Review-Exercise-Subscribe 
+    </title>
+    
+  
+</head>
+<style>
+  .subscribe-button{
+    background-color: black;
+    color: white;
+  }
+ 
+</style>
+<body>
+ <p> Youtube Subscriber Button </p>
+ <button onclick="
+ buttonChange()
+ " class="js-subscribe subscribe-button">Subscribe</button>
+  
+  <script>
+    const buttonElement = document.querySelector('.js-subscribe');
+
+    function buttonChange(){
+      if (buttonElement.innerHTML === 'Subscribe'){
+        buttonElement.innerHTML = 'Subscribed';
+      }else {
+        buttonElement.innerHTML = 'Subscribe';
+      }
+    }
+  </script>
+</body>
+</html>
